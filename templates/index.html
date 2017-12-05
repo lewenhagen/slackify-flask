@@ -1,0 +1,16 @@
+{% include 'header.html' %}
+
+<div class="container">
+    <img class="logo" src="{{ url_for('static', filename='img/slackify_logo.png') }}" alt="logo">
+    <div class="row">
+    </div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            {% include 'forms/login_form.html' %}
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+{% include 'footer.html' %}

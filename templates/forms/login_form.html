@@ -1,0 +1,15 @@
+<form action="verify.php" method="POST">
+    <div class="form-group">
+        <label for="assoc">Välj förening</label>
+        <select class="form-control" id="assoc" name="assoc">
+            {% for header in headers %}
+                <option value="{{ header }}">{{ header }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="pass">Lösenord:</label>
+        <input type="hidden" name="hp" value="human">
+        <input type="password" name="pass" id="pass"> => <button class="btn btn-sm" type="submit">Verifiera</button>
+    </div>
+</form>
